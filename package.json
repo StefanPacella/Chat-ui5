@@ -1,0 +1,20 @@
+{
+	"name": "openui5-chat",
+	"version": "1.0.0",
+	"description": "Chat With OpenUI5",
+	"scripts": {
+        "start": "ui5 serve",
+        "build": "ui5 build"
+	},
+	"devDependencies": {
+		"@ui5/cli": "^3",
+        "@openui5/themelib_sap_fiori_3": "^1",
+        "@openui5/sap.ui.core": "^1",
+        "@openui5/sap.ui.layout": "^1",
+        "@openui5/sap.ui.integration": "^1",
+        "@openui5/sap.f": "^1",
+        "@openui5/sap.m": "^1",
+        "@sapui5/sap.ui.richtexteditor": "^1",
+        "@openui5/sap.ui.webc.main": "^1"
+	}
+}

@@ -1,0 +1,34 @@
+<mvc:View
+	controllerName="chat.controller.Signin"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.f"
+	xmlns:m="sap.m"
+	xmlns:layout= "sap.ui.layout">
+	<m:FlexBox alignItems="Center" justifyContent="Center" height="70%" >
+		<Card> 
+			<content width="100%">
+				<m:VBox>
+					<layout:VerticalLayout width="100%">
+						<m:FlexBox alignItems="Center" justifyContent="Center"  direction="Column" width="100%">
+							<layout:BlockLayoutCell HorizontalAlign="Center" title="{i18n>SigninT}"/>
+			    		</m:FlexBox>
+					<layout:Grid class="sapUiSmallMargin" defaultSpan="XL10 L10 M10 S10" defaultIndent="XL1 L1 M1 S1">
+	   	   				<m:Input width="100%" placeholder="{i18n>SiginNicknameText}" value="{signin>/nickname}" />
+   	   					<m:Input width="100%" placeholder="{i18n>Email}" value="{signin>/email}" />
+ 	    				<m:Input width="100%" placeholder="{i18n>Password}" type="Password" value="{signin>/password}"/>
+   	    			</layout:Grid>
+					</layout:VerticalLayout>
+					<m:Toolbar width="100%" height="10px"/>
+					<m:HBox width="100%">
+						<m:FlexBox alignItems="End" justifyContent="End">
+							<m:Button width="15rem" press="handleClickGoToBack" text="{i18n>Back}" type="Transparent" class="sapUiSmallMargin"/>
+						</m:FlexBox>
+						<m:FlexBox alignItems="End" justifyContent="Start">
+							<m:Button width="15rem" text="{i18n>Signin}" class="sapUiSmallMargin" press="signinAction"/>
+						</m:FlexBox>
+					</m:HBox>
+				</m:VBox>
+			</content>
+		</Card>
+	</m:FlexBox>
+</mvc:View>

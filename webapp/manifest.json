@@ -1,0 +1,138 @@
+{
+	"sap.app": {
+		"id": "chat",
+		"type": "application",
+		"title": "Chat",
+		"description": "Chat",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"webConfig": {
+			"urlRest": "http://localhost:8090/yourUrlRESTFul/"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"phone": true,
+			"tablet": true
+		}
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.f": {},
+				"sap.ui.layout": {},
+				"sap.ui.integration": {}
+			}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "chat.i18n.i18n",
+					"supportedLocales": [
+						"it"
+					],
+					"fallbackLocale": "it"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/styles.css"
+				}
+			]
+		},
+		"rootView": {
+			"viewName": "chat.view.BaseView",
+			"type": "XML",
+			"async": true,
+			"id": "baseID"
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"type": "View",
+				"viewType": "XML",
+				"viewPath": "chat.view",
+				"controlId": "baseID",
+				"controlAggregation": "pages",
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "index",
+					"target": "login"
+				},
+				{
+					"pattern": "edit",
+					"name": "edit",
+					"target": "edit"
+				},
+				{
+					"pattern": "signin",
+					"name": "signin",
+					"target": "signin"
+				},
+				{
+					"pattern": "login",
+					"name": "login",
+					"target": "login"
+				},
+				{
+					"pattern": "editpicture",
+					"name": "editpicture",
+					"target": "editpicture"
+				},
+				{
+					"pattern": "chat",
+					"name": "chat",
+					"target": "chat"
+				}
+			],
+			"targets": {
+				"login": {
+					"viewId": "login",
+					"level": 1,
+					"viewName": "Login"
+				},
+				"ShellBar": {
+					"viewId": "ShellBar",
+					"level": 1,
+					"viewName": "ShellBar"
+				},
+				"signin": {
+					"viewId": "signin",
+					"level": 1,
+					"viewName": "Signin"
+				},
+				"edit": {
+					"viewId": "edit",
+					"level": 1,
+					"viewName": "Edit"
+				},
+				"editpicture": {
+					"viewId": "editpicture",
+					"level": 1,
+					"viewName": "EditPicture"
+				},
+				"chat": {
+					"viewId": "chat",
+					"level": 2,
+					"viewName": "Chat"
+				},
+				"menu": {
+					"viewId": "menu",
+					"level": 2,
+					"viewName": "Menu"
+				}
+			}
+		}
+	}
+}

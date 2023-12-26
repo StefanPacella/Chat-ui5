@@ -1,0 +1,9 @@
+﻿ <mvc:View
+  xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  controllerName="chat.controller.BaseView">
+	<mvc:XMLView viewName="chat.view.ShellBar"/>
+  <App id="baseID"></App>
+</mvc:View>

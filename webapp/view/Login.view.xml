@@ -1,0 +1,33 @@
+<mvc:View
+	controllerName="chat.controller.Login"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.f"
+	xmlns:m="sap.m"
+	xmlns:layout= "sap.ui.layout">
+	<m:FlexBox alignItems="Center" justifyContent="Center" height="70%" >
+		<Card> 
+			<content width="100%">
+				<m:VBox>
+					<layout:VerticalLayout width="100%">
+						<m:FlexBox alignItems="Center" justifyContent="Center"  direction="Column" width="100%">
+							<layout:BlockLayoutCell HorizontalAlign="Center" title="{i18n>Welcome}"/>
+			    		</m:FlexBox>
+					  	<layout:Grid class="sapUiSmallMargin" defaultSpan="XL10 L10 M10 S10" defaultIndent="XL1 L1 M1 S1">
+   	   						<m:Input width="100%" id="uid" placeholder="{i18n>Email}" value="{modelLogin>/username}" />
+ 	    					<m:Input width="100%" id="pasw" placeholder="{i18n>Password}" type="Password" value="{modelLogin>/password}"/>
+   	    				</layout:Grid>
+						<m:Toolbar width="100%" height="10px"/>
+						<m:HBox>
+							<m:FlexBox width="100%" alignItems="End" justifyContent="Start">
+								<m:Button press="handleClickGoToSignin" width="15rem" text="{i18n>Signin}" class="sapUiSmallMargin" type="Transparent"/>
+							</m:FlexBox>
+							<m:FlexBox width="100%" alignItems="End" justifyContent="End">
+								<m:Button width="15rem" text="{i18n>Login}" press="loginAction" class="sapUiSmallMargin"/>
+							</m:FlexBox>
+						</m:HBox>
+					</layout:VerticalLayout>
+				</m:VBox>
+			</content>
+		</Card>
+	</m:FlexBox>
+</mvc:View>

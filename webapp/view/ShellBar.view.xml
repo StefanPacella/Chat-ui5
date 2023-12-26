@@ -1,0 +1,11 @@
+<mvc:View
+	controllerName="chat.controller.ShellBar"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	xmlns="sap.f">
+	<ShellBar title="Chat">
+		<profile>
+			<m:Avatar id="idbutton" initials="UI" text="Open Menu" press="onPress" ariaHasPopup="Menu"/>
+		</profile>
+	</ShellBar>
+</mvc:View>

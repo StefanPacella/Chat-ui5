@@ -1,0 +1,29 @@
+<mvc:View
+	controllerName="chat.controller.Login"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.f"
+	xmlns:m="sap.m"
+	xmlns:layout= "sap.ui.layout">
+	<m:FlexBox alignItems="Center" justifyContent="Center" height="70%" >
+		<Card> 
+			<content width="100%">
+				<m:VBox>
+					<layout:VerticalLayout width="100%">
+						<m:FlexBox alignItems="Center" justifyContent="Center"  direction="Column" width="100%">
+							<layout:BlockLayoutCell HorizontalAlign="Center" title="{i18n>Edittitle}"/>
+			    		</m:FlexBox>
+					<layout:Grid class="sapUiSmallMargin" defaultSpan="XL10 L10 M10 S10" defaultIndent="XL1 L1 M1 S1">
+	   	   				<m:Input width="100%" id="idnickname" placeholder="{i18n>EditNickname}" value="{modelLogin>/username}" />
+   	   					<m:Input width="100%" id="uid" placeholder="{i18n>EditOldPassword}" value="{modelLogin>/username}" />
+ 	    				<m:Input width="100%" id="pasw" placeholder="{i18n>EditNewPassword}" type="Password" value="{modelLogin>/password}"/>
+   	    			</layout:Grid>
+					</layout:VerticalLayout>
+					<m:Toolbar width="100%" height="10px"/>
+					<m:FlexBox alignItems="End" justifyContent="End">
+						<m:Button width="15rem" text="{i18n>Update}" class="sapUiSmallMargin"/>
+					</m:FlexBox>
+				</m:VBox>
+			</content>
+		</Card>
+	</m:FlexBox>
+</mvc:View>

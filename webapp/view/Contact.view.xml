@@ -1,0 +1,12 @@
+<core:FragmentDefinition
+	controllerName="chat.controller.Contact"
+	xmlns="sap.ui.webc.main"
+	xmlns:core="sap.ui.core"
+    xmlns:m="sap.m">
+    <Card width="95%" class="sapUiTinyMargin">
+        <StandardListItem
+            description="Food researcher"
+            image="{value:'avatar.png', formatter: '.resolveUrl'}"
+            text="Cat " />
+    </Card>
+</core:FragmentDefinition>
