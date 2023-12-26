@@ -24,16 +24,16 @@ ui5 serve
 ```
 
 ## Chat
-![LoginDesktop]([https://github.com/StefanPacella/Chat-ui5/printscreen/chatdesktop.png.png])
+![LoginDesktop](https://github.com/StefanPacella/Chat-ui5/blob/50df95844a854b7a2d95b93e6a4fd225c7988052/printscreen/chatdesktop.png.png)
 
 ## Login
-![ChatDesktop]([https://github.com/StefanPacella/Chat-ui5/printscreen/logindesktop.png])
+![ChatDesktop](https://github.com/StefanPacella/Chat-ui5/blob/50df95844a854b7a2d95b93e6a4fd225c7988052/printscreen/logindesktop.png)
 
-## Chat with smartphone
-![ChatSmartPhone1]([https://github.com/StefanPacella/Chat-ui5/printscreen/smartchat.png])
-![ChatSmartPhone2]([https://github.com/StefanPacella/Chat-ui5/printscreen/smartchat2.png])
+## The chat by using a smartphone
+![ChatSmartPhone1](https://github.com/StefanPacella/Chat-ui5/blob/50df95844a854b7a2d95b93e6a4fd225c7988052/printscreen/smartchat.png)
+![ChatSmartPhone2](https://github.com/StefanPacella/Chat-ui5/blob/50df95844a854b7a2d95b93e6a4fd225c7988052/printscreen/smartchat2.png)
 
-## Login with smartphone
-![LoginSmartPhone]([https://github.com/StefanPacella/Chat-ui5/printscreen/smartlogin.png])
+## The view of page login with a smartphone
+![LoginSmartPhone](https://github.com/StefanPacella/Chat-ui5/blob/50df95844a854b7a2d95b93e6a4fd225c7988052/printscreen/smartlogin.png)
 
 
