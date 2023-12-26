@@ -11,7 +11,7 @@ sap.ui.define([
 			MessageToast.show("Home icon pressed");
 		},
 		onPress: function () {
-			var oView = this.getView(),
+			let oView = this.getView(),
 			oButton = oView.byId("idbutton");
 			if (!this._oMenuFragment) {
 				this._oMenuFragment = Fragment.load({
@@ -28,7 +28,7 @@ sap.ui.define([
 			}
 		},
 		onMenuAction: function (oEvent) {
-			var oItem = oEvent.getParameter("item"), sItemPath = "";
+			let oItem = oEvent.getParameter("item"), sItemPath = "";
 
 			while (oItem instanceof MenuItem) {
 				sItemPath = oItem.getText() + sItemPath;

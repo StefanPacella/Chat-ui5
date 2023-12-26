@@ -8,7 +8,7 @@ sap.ui.define(["./BaseController"], function (BaseController) {
         onInit: function () {
             this.baseInit();
             oControllerAuth = this;
-            var signin = new sap.ui.model.json.JSONModel({});
+            let signin = new sap.ui.model.json.JSONModel({});
             this.getView().setModel(signin, "signin");
         },
 

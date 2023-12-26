@@ -9,15 +9,15 @@ sap.ui.define(["./BaseController"], function (BaseController) {
             this.baseInit();
             oControllerAuth = this;
 
-            var modelLogin = new sap.ui.model.json.JSONModel({});
+            let modelLogin = new sap.ui.model.json.JSONModel({});
             this.getView().setModel(modelLogin, "modelLogin");
         },
 
         loginAction: function () {
-            var modelLog = this.getView().getModel("modelLogin");
-            var dataLogg = modelLog.getData();
-            var email = dataLogg.username;
-            var password = dataLogg.password;
+            let modelLog = this.getView().getModel("modelLogin");
+            let dataLogg = modelLog.getData();
+            let email = dataLogg.username;
+            let password = dataLogg.password;
             this.getRouter().navTo("chat");
         },
 

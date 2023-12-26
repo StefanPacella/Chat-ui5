@@ -8,13 +8,13 @@ sap.ui.define(["./BaseController", "sap/ui/core/routing/History"], function (Bas
         onInit: function () {
             this.baseInit();
             oControllerAuth = this;
-            var modelLogin = new sap.ui.model.json.JSONModel({});
+            let modelLogin = new sap.ui.model.json.JSONModel({});
             this.getView().setModel(modelLogin, "modelLogin");
         },
 
         handleClickGoToBack: function (oEvent) {
-            var oHistory = History.getInstance();
-            var sPreviousHash = oHistory.getPreviousHash();
+            let oHistory = History.getInstance();
+            let sPreviousHash = oHistory.getPreviousHash();
 
             if (sPreviousHash !== undefined) {
                 window.history.go(-1);

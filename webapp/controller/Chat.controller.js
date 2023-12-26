@@ -11,12 +11,12 @@ sap.ui.define(["./BaseController",
 
             onInit: function () {
                 this.baseInit();
-                var modelLogin = new sap.ui.model.json.JSONModel({});
+                let modelLogin = new sap.ui.model.json.JSONModel({});
                 this.getView().setModel(modelLogin, "modelLogin");
                 this.initRichTextEditor();
-                var scrollContainerid = this.byId("scrollContainerid");
+                let scrollContainerid = this.byId("scrollContainerid");
 
-                var oDelegate = {
+                let oDelegate = {
                     // onclick: function(){
                     ///  alert("dudud");
                     //   }
@@ -24,7 +24,7 @@ sap.ui.define(["./BaseController",
 
                 scrollContainerid.addEventDelegate(oDelegate);
                 scrollContainerid.onAfterRendering = function () {
-                    var b = false;
+                    let b = false;
                     this.$().on("scroll", function () {
                         if (b === false) {
                             MessageToast.show("scroll");
@@ -37,7 +37,7 @@ sap.ui.define(["./BaseController",
                 this.loadMessage(scrollContainerid, "chat.view.MessageSent");
             },
             initRichTextEditor: function () {
-                var that = this,
+                let that = this,
                     sHtmlValue = '';
 
                 sap.ui.require(["sap/ui/richtexteditor/RichTextEditor"],
@@ -64,7 +64,7 @@ sap.ui.define(["./BaseController",
                     });
             },
             loadMessage(scrollContainerid, viewNameFileName) {
-                var f = XMLView.create({
+                let f = XMLView.create({
                     viewName: viewNameFileName
                 });
                 f.then(function (xml) {
