@@ -1,7 +1,7 @@
 # Chat-ui5
 An example of chat based on ui5
 
-This is just the front-end and for run this project you need to have npm and ui5.
+This is only the front-end, so to get this project up and running, you'll need npm and ui5.
 
 
 Usage.
